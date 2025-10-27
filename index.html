@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskMate - Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📝 TaskMate</h1>
+    <button id="theme-toggle">🌙</button>
+  </header>
+
+  <main>
+    <section class="task-input">
+      <input type="text" id="task-input" placeholder="Add a new task..." />
+      <select id="category">
+        <option value="Work">Work</option>
+        <option value="Personal">Personal</option>
+        <option value="Study">Study</option>
+      </select>
+      <button id="add-btn">Add</button>
+    </section>
+
+    <section class="filters">
+      <button class="filter-btn active" data-filter="All">All</button>
+      <button class="filter-btn" data-filter="Work">Work</button>
+      <button class="filter-btn" data-filter="Personal">Personal</button>
+      <button class="filter-btn" data-filter="Study">Study</button>
+    </section>
+
+    <ul id="task-list"></ul>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ by Souvik Mondal</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
